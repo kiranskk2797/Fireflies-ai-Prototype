@@ -1,0 +1,16 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "Xj2Uy436RJuuVhpkqE-fT"
+uri = "file://artifacts/fireflies-commitments/public/mini-prd.docx"
+type = "word_document"
+title = "Fireflies Commitments — Mini PRD"
+description = "Downloadable Step 4 PRD by Kirankumar S, aligned with the interactive prototype."
+logical_id = "829b6630-1ebb-4a4c-bd89-eebab661301e"
+content_hash = "sha256:2badc689f1dcb0faa6a99d52468796ffff99dde5227e9226ee7b1fbd1225d396"
+size = 11591
+mtime_ms = 1793272372040
+storage_uri = "gcs://replit-rams-assets-pike/rams/assets/repl:cd40fa39-7a75-4049-bbe1-3dc1911fe90e/829b6630-1ebb-4a4c-bd89-eebab661301e/1c8ba5cf-58a9-44f9-b89c-5b9807d094a0"
+storage_version_token = "1793272437086044"
+content_type = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"

@@ -1,0 +1,1 @@
+- [Commitment capstone direction](commitment-capstone.md) — Preserve owner-confirmed handoff and explicit resolution; pending or blocked work is not resolved.

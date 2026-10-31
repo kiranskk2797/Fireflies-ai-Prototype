@@ -1,0 +1,28 @@
+kind = "slides"
+previewPath = "/fireflies-commitments-deck/"
+title = "Fireflies Commitments — Capstone"
+description = "A nine-slide Product Management capstone deck explaining the Fireflies Commitments prototype, its owner-confirmed handoff and resolution design, the proposed 14-day measure, and validation needs."
+version = "1.0.0"
+id = "artifacts/fireflies-commitments-deck"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/fireflies-commitments-deck/" ]
+localPort = 24463
+
+[services.development]
+run = "pnpm --filter @workspace/fireflies-commitments-deck run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/fireflies-commitments-deck", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/fireflies-commitments-deck/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24463"
+BASE_PATH = "/fireflies-commitments-deck/"

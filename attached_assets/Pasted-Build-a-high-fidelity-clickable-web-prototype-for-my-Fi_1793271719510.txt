@@ -1,0 +1,31 @@
+Build a high-fidelity, clickable web prototype for my Fireflies.ai Product Management capstone, Step 4.
+
+**Author:** Kirankumar S
+
+Use the attached screenshots of the actual Fireflies.ai interface as the primary visual reference. Study the navigation, layout, colors, typography, spacing, task cards, menus, and existing interactions before designing anything.
+
+Do not create a generic task-management dashboard. Extend the existing Fireflies Tasks experience shown in my screenshots.
+
+Implement two core capabilities:
+
+**1. Owner-confirmed commitment handoff**
+- Display extracted action items as candidates, not automatically accepted commitments.
+- Show the original meeting and relevant context.
+- Allow the proposed owner to confirm, edit, decline, or suggest another owner.
+- Require the new owner to accept before a reassignment becomes active.
+
+**2. Explicit commitment resolution**
+- Allow confirmed commitments to be marked Done, Reassigned, or Deliberately dropped.
+- Include a Blocked state that remains unresolved.
+- Display clear status labels and meaningful feedback after actions.
+- Stop or adapt simulated reminders after a commitment is resolved or no longer relevant.
+
+Integrate these capabilities naturally into the actual interface shown in the references. Preserve its recognizable navigation and existing design patterns.
+
+Make the prototype genuinely interactive. Buttons must work, state changes must appear in the UI, and the experience must be usable at desktop and mobile widths. Use realistic but clearly synthetic example data.
+
+Do not invent existing Fireflies capabilities or claim that the proposed design improves the resolution rate without experimental evidence.
+
+After building the prototype, provide a concise explanation of the user flow and identify any simulated functionality.
+
+My capstone goal is to improve honest 14-day commitment resolution from the case-study baseline of 28% toward the target of 45%, while respecting user autonomy and avoiding notification overload.

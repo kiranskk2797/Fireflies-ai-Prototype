@@ -1,0 +1,74 @@
+[
+  {
+    "id": "f1d2b3c4-0000-4000-8000-000000000001",
+    "position": 1,
+    "filepath": "src/pages/slides/Cover.tsx",
+    "title": "Fireflies Commitments",
+    "description": "Owner-confirmed handoffs. Explicit outcomes.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "f1d2b3c4-0000-4000-8000-000000000002",
+    "position": 2,
+    "filepath": "src/pages/slides/Problem.tsx",
+    "title": "An extracted action is not yet an agreed commitment",
+    "description": "The capstone problem diagnosis and its evidence limits.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "f1d2b3c4-0000-4000-8000-000000000003",
+    "position": 3,
+    "filepath": "src/pages/slides/Scope.tsx",
+    "title": "Keep the solution inside the existing Tasks experience",
+    "description": "Product scope grounded in the supplied interface references.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "f1d2b3c4-0000-4000-8000-000000000004",
+    "position": 4,
+    "filepath": "src/pages/slides/Handoff.tsx",
+    "title": "Owner agreement comes before assignment",
+    "description": "Candidate review and replacement-owner acceptance.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "f1d2b3c4-0000-4000-8000-000000000005",
+    "position": 5,
+    "filepath": "src/pages/slides/Resolution.tsx",
+    "title": "Each commitment has an honest outcome",
+    "description": "Distinct open, blocked, completed, dropped, and transferred states.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "f1d2b3c4-0000-4000-8000-000000000006",
+    "position": 6,
+    "filepath": "src/pages/slides/Interface.tsx",
+    "title": "A Tasks-native interface makes state visible",
+    "description": "Visual patterns, responsive support, and supplied reference screens.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "f1d2b3c4-0000-4000-8000-000000000007",
+    "position": 7,
+    "filepath": "src/pages/slides/Metrics.tsx",
+    "title": "Measure explicit closure, not clicks",
+    "description": "The proposed 14-day measure and case-study premise figures.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "f1d2b3c4-0000-4000-8000-000000000008",
+    "position": 8,
+    "filepath": "src/pages/slides/Simulation.tsx",
+    "title": "The prototype demonstrates the flow—not an integration",
+    "description": "Synthetic data, browser-local persistence, and simulation limits.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "f1d2b3c4-0000-4000-8000-000000000009",
+    "position": 9,
+    "filepath": "src/pages/slides/Validation.tsx",
+    "title": "Test owner trust before claiming lift",
+    "description": "The usability and measurement work still needed.",
+    "speakerNotes": ""
+  }
+]

@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Fireflies Commitments Prototype"
+description = "An interactive capstone prototype for reviewing meeting action candidates, confirming commitment ownership, tracking explicit outcomes, and testing status-aware follow-up within the Fireflies Tasks experience."
+version = "1.0.0"
+id = "artifacts/fireflies-commitments"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21262
+
+[services.development]
+run = "pnpm --filter @workspace/fireflies-commitments run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/fireflies-commitments", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/fireflies-commitments/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21262"
+BASE_PATH = "/"

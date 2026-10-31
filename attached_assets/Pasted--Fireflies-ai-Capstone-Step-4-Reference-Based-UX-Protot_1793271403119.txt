@@ -1,0 +1,266 @@
+# Fireflies.ai Capstone — Step 4: Reference-Based UX Prototype and Mini PRD
+
+## Role
+
+Act as a Senior Product Manager, Senior UX/UI Designer, Product Designer, and Frontend Prototyping Engineer.
+
+I am completing the Fireflies.ai Product Management Launchpad capstone. My name is **Kirankumar S**.
+
+I will provide:
+1. Screenshots of the actual Fireflies.ai interface.
+2. Reference images showing the desired UX patterns, layouts, components, or interactions.
+3. The official Airtribe Step 4 assignment instructions.
+4. My Step 1 research, Step 2 problem framing, and Step 3 solution prioritization reports, if needed.
+
+Your task is to study these references carefully and produce two consistent deliverables:
+
+**Deliverable A:** A polished, interactive prototype that closely follows the actual Fireflies.ai interface.
+
+**Deliverable B:** A professional Mini PRD that documents the exact experience implemented in the prototype.
+
+Do not begin designing until you have inspected the supplied references and assignment requirements.
+
+## 1. Project objective
+
+Design an in-product experience that helps meeting commitments reach honest closure.
+
+The case study specifies:
+- Baseline: 28% of commitments resolved within 14 days.
+- Target: 45% resolved within 14 days within six months.
+- A commitment is resolved when it is explicitly marked Done, Reassigned, or Deliberately dropped.
+- Silent inaction does not count as resolution.
+
+These are assignment targets, not proven outcomes of the proposed design.
+
+## 2. Selected product direction
+
+Keep the solution consistent with the previous capstone steps.
+
+### Core solution 1: Owner-confirmed commitment handoff
+
+An extracted action item is a candidate, not automatically an accepted commitment.
+
+The proposed owner should be able to:
+- Review the candidate and its meeting context.
+- Confirm it as a genuine commitment.
+- Edit inaccurate or unclear wording.
+- Decline it if no commitment was actually agreed.
+- Suggest another owner without assigning work to someone who has not agreed.
+
+A new owner must confirm responsibility before the commitment becomes active under their ownership.
+
+### Core solution 2: Lightweight explicit-resolution workflow
+
+Once a commitment is confirmed, its owner should be able to:
+- Mark it Done.
+- Request reassignment, with the new owner confirming acceptance.
+- Deliberately drop it when it is no longer needed.
+- Mark it Blocked when progress is prevented by a dependency.
+
+Blocked is not a resolved state.
+
+The experience should minimize manual work and irrelevant notifications, respect user autonomy, and connect with existing workflows rather than becoming another project-management platform.
+
+## 3. Reference-image analysis — mandatory
+
+Before creating the prototype, inspect every supplied screenshot and reference image.
+
+Identify:
+- Overall page layout and navigation.
+- Sidebar structure and dimensions.
+- Header, toolbar, and content hierarchy.
+- Typography, colors, spacing, borders, shadows, and corner radii.
+- Task cards, rows, status badges, checkboxes, menus, dialogs, and buttons.
+- Information density and responsive behavior.
+- Existing Fireflies visual conventions.
+- Any reference interaction patterns that should be adapted.
+
+Create a short reference analysis explaining which elements will be reproduced and which new elements are needed for the commitment workflow.
+
+**Visual fidelity requirements:**
+- Use the actual Fireflies interface screenshots as the primary visual reference.
+- Preserve the recognizable existing navigation, layout, typography, and component styles wherever possible.
+- Integrate the proposed workflow into the existing Tasks experience rather than designing an unrelated dashboard.
+- Use reference images to guide spacing, alignment, component structure, and interaction patterns.
+- Do not invent a new design system when the supplied references already establish one.
+- Do not reproduce unrelated reference content merely because it appears in a screenshot.
+- Do not claim pixel-perfect fidelity if the references do not provide sufficient detail.
+
+If a reference is ambiguous, identify the uncertainty and use the closest supported pattern. Do not invent unseen existing functionality.
+
+## 4. Prototype requirements
+
+Build a functional, clickable, browser-based prototype with realistic example data.
+
+Prioritize the actual user journey over decorative dashboard elements.
+
+The prototype should demonstrate these screens or states, integrated into the reference interface:
+
+### A. Existing Tasks experience
+Show where the proposed feature belongs within the actual Fireflies interface.
+
+### B. Candidate commitment review
+Display:
+- Proposed action wording.
+- Source meeting and relevant context.
+- Proposed owner, if known.
+- A clear candidate or awaiting-confirmation status.
+- Confirm, Edit, Decline, and Suggest another owner actions.
+
+### C. Ownership confirmation
+Show the transition from candidate to confirmed commitment.
+
+When another owner is suggested, demonstrate that the new owner must accept before the commitment becomes active under their ownership.
+
+### D. Active commitment
+Show the confirmed commitment with its owner, status, source meeting, and relevant timing information.
+
+### E. Explicit resolution
+Demonstrate:
+- Done.
+- Reassignment request and pending acceptance.
+- Deliberately dropped.
+- Blocked, which remains unresolved.
+
+Make the difference between a resolved outcome and an unresolved status visually clear.
+
+### F. Status-aware follow-up
+Where supported by the proposed design, demonstrate that reminders stop or adapt after a commitment is resolved, declined, or transferred.
+
+Do not imply that real notifications are sent by a local prototype.
+
+### Interaction quality
+- Buttons must perform their intended actions.
+- State changes must be reflected in the interface.
+- Users must be able to navigate between relevant views.
+- Provide clear feedback after important actions.
+- Include useful empty, pending, blocked, and resolved states where appropriate.
+- Make the prototype usable at desktop and mobile widths.
+- Avoid dead buttons, decorative-only controls, and misleading interactions.
+
+Use synthetic example data and label it as such. Do not invent research findings or represent fictional examples as real participants.
+
+## 5. Technical expectations
+
+Produce a working prototype, not just a screenshot or static mockup.
+
+Choose an implementation approach appropriate to the available environment. Prefer a maintainable component-based implementation if the environment supports it.
+
+The prototype should:
+- Run in a browser using the supplied instructions.
+- Keep sample interactions functional without requiring real Fireflies credentials.
+- Use local demonstration state when a backend is unavailable.
+- Clearly disclose any simulated integrations or notifications.
+- Avoid external dependencies unless necessary.
+- Include concise instructions for running or opening the prototype.
+
+If the environment supports an editable code project, provide the source files. Do not substitute a static image for the interactive experience.
+
+## 6. Mini PRD requirements
+
+Create a professional Mini PRD that describes the same experience implemented in the prototype.
+
+Include these sections:
+
+1. **Document overview** — project name, author, objective, and scope.
+2. **Problem statement** — consistent with the previous capstone steps.
+3. **Evidence and rationale** — distinguish case-study facts, research observations, hypotheses, and recommendations.
+4. **Goals and success criteria** — include the 14-day resolution rate and the 28% baseline / 45% target.
+5. **Target users and needs** — individual contributors, commitment makers, managers, administrators, and buyers where relevant.
+6. **Scope** — in-scope features and explicit exclusions.
+7. **Current commitment lifecycle** — show the existing or case-study-described journey and potential loss points.
+8. **Proposed user flow** — match the prototype.
+9. **User stories** — explain what each user needs and why.
+10. **Functional requirements** — specify observable product behavior.
+11. **Acceptance criteria** — write testable Given/When/Then criteria for the key interactions.
+12. **States and transitions** — candidate, awaiting confirmation, open, blocked, pending reassignment, and resolved outcomes.
+13. **Edge cases** — false-positive candidates, declined ownership, invalid wording, reassignment rejection, deleted tasks, stale reminders, and abandoned confirmation.
+14. **Metrics and event tracking** — include the North Star outcome, supporting metrics, guardrails, and event definitions.
+15. **Risks and mitigations** — include autonomy, trust, notification fatigue, inaccurate tasks, and surveillance concerns.
+16. **Dependencies and assumptions** — distinguish verified capabilities from unverified requirements.
+17. **Prototype limitations** — identify simulated behavior and unavailable integrations.
+18. **Open questions and validation plan** — identify what requires user testing or technical discovery.
+
+Keep the PRD concise enough to be useful but detailed enough for a senior PM to review the product logic.
+
+## 7. Measurement rules
+
+Use the 14-day commitment resolution rate as the North Star outcome.
+
+Count a commitment as resolved only when it is explicitly marked:
+- Done.
+- Reassigned after the new owner accepts.
+- Deliberately dropped.
+
+Do not count:
+- Silent inactivity.
+- Unconfirmed candidate tasks.
+- Pending reassignment.
+- Blocked commitments.
+
+Define the eligible cohort and measurement start point clearly. Explain any ambiguity that must be resolved before implementation.
+
+Include guardrails for:
+- Candidate-task quality.
+- Owner-confirmation friction.
+- Notification dismissals and fatigue.
+- User trust and autonomy.
+- Inappropriate assignments.
+- Deliberate-drop rates and potential metric gaming.
+
+Do not claim the proposed design will increase the resolution rate until supported by experimental evidence.
+
+## 8. Cross-deliverable consistency
+
+The prototype and Mini PRD must describe the same product.
+
+Every key prototype interaction must have corresponding requirements and acceptance criteria. Every major requirement should have a corresponding screen, interaction, or clearly stated reason for not being represented in the prototype.
+
+Maintain consistency with the existing capstone:
+- Step 1: Market and user research.
+- Step 2: Problem framing.
+- Step 3: Solution ideation and prioritization.
+- Step 4: Experience design, Mini PRD, and prototype.
+
+Do not introduce new core solutions without explaining how they fit the previously selected product direction.
+
+## 9. Quality review before delivery
+
+Before delivering the artifacts, check:
+
+**UX review**
+- Does the prototype look like it belongs inside the supplied Fireflies interface?
+- Are the key actions discoverable?
+- Are candidate, confirmed, blocked, and resolved states distinguishable?
+- Does the flow preserve ownership agreement and user autonomy?
+- Are the interactions actually functional?
+
+**PRD review**
+- Are the requirements testable?
+- Do acceptance criteria cover the important state transitions?
+- Are exclusions and dependencies explicit?
+- Are the metrics correctly defined?
+- Are hypotheses clearly separated from facts?
+
+**Consistency review**
+- Does the Mini PRD accurately describe the prototype?
+- Are all key interactions covered by acceptance criteria?
+- Are any claimed existing capabilities unverified?
+- Are any outcomes or research results fabricated?
+
+Fix identified issues before final delivery.
+
+## 10. Final deliverables
+
+Provide:
+
+1. A short reference-image analysis.
+2. A clickable prototype that closely follows the supplied Fireflies interface.
+3. The prototype source files and clear instructions for opening or running it.
+4. A professional Mini PRD as a downloadable DOCX.
+5. A short acceptance checklist mapping the Step 4 assignment requirements to the completed deliverables.
+6. A concise list of assumptions that still need validation.
+
+Use **Kirankumar S** as the author name.
+
+Prioritize fidelity to the supplied references, clear product reasoning, functional interactions, and alignment with the official capstone rubric. Do not generate the final prototype until the reference images and assignment requirements have been inspected.
